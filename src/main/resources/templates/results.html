@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<title>Results</title>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <title>Results</title>
+</head>
+<body>
+<div align="center">
+    <h1>BTree Results</h1>
+    <tbody>
+    <!--        table that displays results-->
+
+    <table border="0=1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Number1</th>
+                <th>Number2</th>
+                <th>Number3</th>
+                <th>Number4</th>
+                <th>Number5</th>
+                <th>Number6</th>
+                <th>Number7</th>
+                <th>Number8</th>
+                <th>Number9</th>
+                <th>Number10</th>
+            </tr>
+        </thead>
+        <tr>
+            <td th:text="${submit.number1}">Number1</td>
+            <td th:text="${submit.number2}">Number2</td>
+            <td th:text="${submit.number3}">Number3</td>
+            <td th:text="${submit.number4}">Number4</td>
+            <td th:text="${submit.number5}">Number5</td>
+            <td th:text="${submit.number6}">Number6</td>
+            <td th:text="${submit.number7}">Number7</td>
+            <td th:text="${submit.number8}">Number8</td>
+            <td th:text="${submit.number9}">Number9</td>
+            <td th:text="${submit.number10}">Number10</td>
+        </tr>
+            <h2 th:text="${bTree}"></h2>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

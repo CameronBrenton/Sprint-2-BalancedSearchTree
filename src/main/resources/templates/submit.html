@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<title>Balanced Search Tree</title>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <title>Balanced Search Tree</title>
+    <h1>Enter in some numbers and I will return to you a BTree</h1>
+</head>
+<body>
+<form method="POST" action="#" th:action="@{/submit}" th:object="${submit}">
+    <input type="number" th:field="*{number1}" placeholder="Enter a number">
+    <input type="number" th:field="*{number2}" placeholder="Enter a number">
+    <input type="number" th:field="*{number3}" placeholder="Enter a number">
+    <input type="number" th:field="*{number4}" placeholder="Enter a number">
+    <input type="number" th:field="*{number5}" placeholder="Enter a number">
+    <input type="number" th:field="*{number6}" placeholder="Enter a number">
+    <input type="number" th:field="*{number7}" placeholder="Enter a number">
+    <input type="number" th:field="*{number8}" placeholder="Enter a number">
+    <input type="number" th:field="*{number9}" placeholder="Enter a number">
+    <input type="number" th:field="*{number10}" placeholder="Enter a number">
+    <!--    <select th:field="*{database}">-->
+    <!--        <option th:each="p: ${databaseList}" th:value="${p}" th:text="${p}"}></option>-->
+    <!--    </select>-->
+    <button type="submit">Search</button>
+</form>
+</body>
+</html>
