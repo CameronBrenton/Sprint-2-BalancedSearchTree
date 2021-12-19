@@ -1,5 +1,5 @@
 // This is the AVLTree class
-
+// Followed tutorial by https://www.baeldung.com/java-avl-trees
 package com.finalsprint.bstree.model;
 
 public class AVLTree {
