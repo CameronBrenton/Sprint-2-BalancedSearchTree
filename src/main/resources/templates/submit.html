@@ -1,3 +1,4 @@
+<!--This is the submit page-->
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <title>Balanced Search Tree</title>
@@ -7,6 +8,7 @@
     <h1>Enter in some numbers and I will return to you a BTree</h1>
 </head>
 <body>
+<!--The form where you enter the numbers to insert into the BTree-->
 <form method="POST" action="#" th:action="@{/submit}" th:object="${submit}">
     <input type="number" th:field="*{number1}" placeholder="Enter a number">
     <input type="number" th:field="*{number2}" placeholder="Enter a number">
@@ -18,9 +20,6 @@
     <input type="number" th:field="*{number8}" placeholder="Enter a number">
     <input type="number" th:field="*{number9}" placeholder="Enter a number">
     <input type="number" th:field="*{number10}" placeholder="Enter a number">
-    <!--    <select th:field="*{database}">-->
-    <!--        <option th:each="p: ${databaseList}" th:value="${p}" th:text="${p}"}></option>-->
-    <!--    </select>-->
     <button type="submit">Search</button>
 </form>
 </body>

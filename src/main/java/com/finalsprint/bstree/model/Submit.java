@@ -1,3 +1,5 @@
+// This is the submit class
+
 package com.finalsprint.bstree.model;
 
 import javax.persistence.Entity;
@@ -5,6 +7,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Submit {
+    // Instance variables
     @Id
     private int number1;
     private int number2;
@@ -17,6 +20,7 @@ public class Submit {
     private int number9;
     private int number10;
 
+    // Constructors
     public Submit() {
     }
 
@@ -105,6 +109,7 @@ public class Submit {
         this.number10 = number10;
     }
 
+    // Getters and Setters
     public int getNumber1() {
         return number1;
     }

@@ -1,3 +1,5 @@
+//This is the MainController class
+
 package com.finalsprint.bstree.controller;
 import com.finalsprint.bstree.model.AVLTree;
 import com.finalsprint.bstree.model.Submit;
@@ -7,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
 
 @Controller
 public class MainController {
@@ -23,7 +24,7 @@ public class MainController {
         return "submit";
     }
 
-    // Post search
+    // Post submit
     @PostMapping(path = "/submit")
     public String submitForm(@ModelAttribute("submit") Submit submit, Model model, AVLTree tree, JSONObject bTree) {
         Submit listSubmit = new Submit();
