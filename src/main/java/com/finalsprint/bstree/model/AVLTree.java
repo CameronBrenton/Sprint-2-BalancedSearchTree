@@ -1,7 +1,10 @@
+// This is the AVLTree class
+
 package com.finalsprint.bstree.model;
 
 public class AVLTree {
 
+    // Node class
     public class Node {
         int key;
         int height;
@@ -15,6 +18,7 @@ public class AVLTree {
 
     private Node root;
 
+    // Methods
     public Node find(int key) {
         Node current = root;
         while (current != null) {

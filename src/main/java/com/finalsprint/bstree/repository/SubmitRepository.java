@@ -1,3 +1,5 @@
+// This is the SubmitRepository class
+
 package com.finalsprint.bstree.repository;
 
 import com.finalsprint.bstree.model.Submit;
